@@ -7,7 +7,7 @@ public class Clase {
     public static void main(String[] args) {
     int numero = 2;
 
-     Ejemplo con if-else
+     //Ejemplo con if-else
     if (numero > 0) {
         System.out.println("El número es positivo.");
     } else if (numero < 0) {
