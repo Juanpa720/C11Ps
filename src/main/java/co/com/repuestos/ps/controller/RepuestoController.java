@@ -26,7 +26,7 @@ public class RepuestoController {
      try {
        Repuesto resultado= iRepuestoServices.consultar(id);
          return ResponseEntity
-                 .status(HttpStatus.CREATED)
+                 .status(HttpStatus.OK)
                  .body(resultado);
      } catch (Exception e) {
          logger.error(e.getMessage());

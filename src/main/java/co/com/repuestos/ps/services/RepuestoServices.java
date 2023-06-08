@@ -22,7 +22,7 @@ public class RepuestoServices implements IRepuestoServices {
         if (id == null){
             throw new Exception("No envio el numero esperado.");
         }
-       return new Repuesto();
+       return repuestoRepository.findById(id);
     }
 
     public  Repuesto guardar(Repuesto repuesto) throws Exception{
