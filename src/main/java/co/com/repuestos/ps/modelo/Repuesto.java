@@ -27,14 +27,13 @@ public class Repuesto {
     private String nombre;
     @Column(name="marca", nullable=false)
     private String marca;
+    @Column(name="modelo", nullable=false)
     private String modelo;
+    @Column(name="precio", nullable=false)
     private double precio;
+    @Column(name="fechainventario", nullable=false)
     private Date fechaInventario;
+    @Column(name="venceelproducto", nullable=false)
     private boolean venceElProducto;
-    public void setId(Long id) {
-        this.id = id;
-    }
-    public Long getId() {
-        return id;
-    }
+
 }
